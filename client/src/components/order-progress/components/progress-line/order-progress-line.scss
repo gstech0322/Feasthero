@@ -1,0 +1,20 @@
+@import '../../../../sass/variables.scss';
+@import '../../../../sass/mixins.scss';
+
+.order-progress-line {
+    position: absolute;
+    z-index: -1;
+    margin-top: 2.09rem;
+    background-color: $booking-progress-line;
+    height: 0.35rem;
+    width: 60%;
+
+    @include for-xxl-desktop {
+        width: 65%;
+    }
+
+    @include for-desktop {
+        height: 0.3rem;
+        margin-top: 1.9rem;
+    }
+}

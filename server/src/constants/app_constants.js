@@ -1,0 +1,6 @@
+const VALID_BOOKING_SIZES = [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+const CUSTOMER = "CUSTOMER";
+const CHEF = "CHEF";
+const ADMIN = "ADMIN"
+
+module.exports = { VALID_BOOKING_SIZES, CUSTOMER, CHEF, ADMIN };

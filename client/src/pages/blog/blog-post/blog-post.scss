@@ -1,0 +1,23 @@
+@import '../../../sass/mixins';
+
+#post {
+   p {
+        font-size: 1.1rem;
+        line-height: 2;
+
+        @include content-breakpoints;
+   }
+
+   img {
+      max-width: 40%;
+      min-width: 20%;
+   }
+
+   h2 {
+      text-align: center;
+      @include for-tablet {
+         font-size: 2.3rem;
+         text-align: left;
+      }
+   }
+}

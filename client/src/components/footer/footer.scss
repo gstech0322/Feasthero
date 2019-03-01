@@ -1,0 +1,39 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+#footer {
+    margin-top: 5rem;
+    background-color: $light;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    h3 {
+        @include for-tablet {
+            margin-bottom: 2rem;
+        }
+    }
+
+    h5 {
+        color: $text-primary;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        @include for-tablet {
+            margin-top: 2rem;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        li {
+            margin-bottom: 0.3rem;
+            a{
+                color: $text-primary;
+                font-size: 1.4rem;
+            }
+            a:hover {
+                color: $text-primary !important;
+            }
+        }
+    }
+}

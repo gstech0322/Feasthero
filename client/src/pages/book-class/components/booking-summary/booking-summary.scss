@@ -1,0 +1,47 @@
+@import '../../../../sass/variables';
+@import '../../../../sass/mixins';
+
+#booking-summary {
+    @include light-content-container;
+    padding:  2.8rem 2rem;
+    color: #464646;
+
+    @include for-desktop {
+        margin-top: 5rem;
+    }
+
+
+    h4 {
+        font-size: 1.9rem;
+        margin-bottom: 1.2rem;
+    }
+
+    h5 {
+        margin: 1rem 0;
+        font-size: 1.6rem;
+    }
+
+    .row {
+        justify-content: space-between;
+    }
+
+    .dollar-amount {
+        text-align: right;
+    }
+
+    .form-check {
+        .form-check-input {
+            margin-top: 0.7rem;
+        }
+    
+        p {
+            margin-left: 0.4rem;
+            font-size: 1.5rem;
+            span {
+                @include content;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+}

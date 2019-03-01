@@ -1,0 +1,15 @@
+@import '../../../../sass/variables';
+@import '../../../../sass/mixins';
+
+#classes {
+    margin-top: 3rem;
+
+    @include for-tablet {
+        text-align: center;
+        margin-bottom: 10rem;
+    }
+
+    @include for-phone {
+        margin-bottom: 6rem;
+    }
+}

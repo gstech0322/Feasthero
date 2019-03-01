@@ -1,0 +1,20 @@
+@import '../../../sass/mixins';
+
+#register {
+    .container {
+        max-width: 50%;
+    }
+
+    input {
+        @include default-input;
+        padding: 1.9rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    .button-primary {
+        width: 100%;
+        margin-bottom: 7px;
+        padding: 0.8rem 0;
+    }
+
+}

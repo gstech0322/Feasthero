@@ -1,0 +1,15 @@
+@import './variables';
+
+$theme-colors: (
+    "light": $light,
+    "primary": $primary,
+    "secondary": $secondary,
+    "bg-light": $light,
+    "bg-primary": $primary,
+    "bg-secondary": $secondary,
+    "text-primary": $primary,
+);
+
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";

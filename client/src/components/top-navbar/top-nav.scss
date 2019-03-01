@@ -1,0 +1,29 @@
+@import '../../sass/mixins';
+
+#top-navbar{
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+
+    a {
+        transition: all 0.5s;
+        color: #3E3E3E !important;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0 3rem;
+    }
+
+    a:hover {
+        transition: all 0.5s;
+        color: #696767 !important;
+    }
+
+    @include for-large-desktop {
+        a {
+            margin: 0.5rem 0;
+        }
+    }
+}
+
+
+

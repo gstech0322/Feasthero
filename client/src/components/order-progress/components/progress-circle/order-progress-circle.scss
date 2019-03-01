@@ -1,0 +1,68 @@
+@import '../../../../sass/variables';
+@import '../../../../sass/mixins';
+
+#booking-steps {
+    .circle {
+        margin: auto;
+        width: 4.4rem;
+        height: 4.4rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include for-large-desktop {
+            width: 4.2rem;
+            height: 4.2rem;
+        }
+
+        @include for-desktop {
+            width: 3.8rem;
+            height: 3.8rem;
+        }
+
+        @include for-phone {
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+    
+        span {
+            color: #fff;
+            font-size: 1.6rem;
+
+            @include for-large-desktop {
+                font-size: 1.5rem
+            }
+
+            @include for-desktop {
+                font-size: 1.4rem
+            }
+
+            @include for-phone {
+                font-size: 1.2rem
+            }
+        }
+    }
+    
+    p {
+        @include content;
+        margin-top: 0.5rem;
+
+        @include for-desktop {
+            font-size: 1.16rem
+        }
+
+        @include for-phone {
+            font-size: 0.8rem;
+        }
+    }
+
+    .active {
+        background-color: $booking-step-circle-active;
+    }
+    
+    .inactive {
+        background-color: $booking-step-cirlce-inactive;
+    }
+}
+

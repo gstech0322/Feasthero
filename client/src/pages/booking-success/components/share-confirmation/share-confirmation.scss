@@ -1,0 +1,36 @@
+@import '../../../../sass/variables';
+@import '../../../../sass/mixins';
+
+#share-confirmation {
+    .col-md-11 {
+        display: flex;
+        align-items: center;
+        
+        @include for-tablet {
+            justify-content: end;
+        }
+        
+        svg {
+            margin-top: -0.6rem;
+
+            @include for-tablet {
+                margin-bottom: 1rem;
+            }
+        }
+
+        svg:hover {
+            cursor: pointer;
+        }
+    }
+
+    input[type=email] {
+        @include default-input;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .button-secondary {
+        margin-top: 0.5rem;
+        padding: 1.2rem 0;
+    }
+}

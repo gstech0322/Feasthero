@@ -1,0 +1,93 @@
+@import '../../../../sass/variables';
+@import '../../../../sass/mixins';
+
+#subscribe-section {
+    background-image: url('../../../../assets/resources/images/subscribe-bg.png');
+    position: relative;
+	height: 37rem;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+
+	#subscribe-content {
+		align-items: center;
+		justify-content: space-around;
+
+		@include for-desktop {
+			justify-content: start;
+		}
+	}
+
+	.container {
+		background-color: #fff;
+		padding: 3rem;
+		box-shadow: 0px 10px 25px 0px #00000040;
+		border-radius: 4px;
+		border-top: 5px solid #FFBA53;
+
+		@include for-phone {
+			max-width: 95%;
+		}
+	}
+
+	#subscribe-text {
+		color: $text-primary;
+
+		h4 {
+			font-weight: bold;
+			font-size: 2rem;
+		}
+
+		p {
+			margin-top: 0.8rem;
+			line-height: 1.4;
+			font-size: 1.2rem;
+
+			@include for-desktop {
+				margin-top: 0.3rem;
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
+
+	.form-group {
+		background-color:#E9E5E5;
+		padding: 0.5rem;
+		border-radius: 8px;
+
+		@include for-large-desktop {
+			padding-bottom: 0.9rem;
+		}
+	}
+
+	input {
+		@include default-input;
+		border: none;
+		border-radius: 0.5rem;
+		padding-top: 1.3rem;
+		padding-bottom: 1.3rem;
+		font-size: 1.2rem;
+
+		@include for-large-desktop {
+			padding-top: 1.5rem;
+			padding-bottom: 1.5rem;
+
+		}
+
+		@include for-phone {
+			font-size: 1.1rem;
+		}
+	}
+
+	.button-secondary {
+		font-size: 1.1rem;
+		padding: 0.15rem 0;
+		margin-top: 0.13rem;
+
+		@include for-large-desktop {
+			padding: 0.3rem 0;
+			margin-top: 0.5rem;
+		}
+	}
+
+}

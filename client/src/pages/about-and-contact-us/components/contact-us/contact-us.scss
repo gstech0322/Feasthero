@@ -1,0 +1,54 @@
+@import '../../../../sass/mixins';
+
+#contact-us {
+    margin-top: 5rem;
+
+    @include for-desktop {
+        padding: 0 2rem;
+    }
+    @include for-tablet {
+        padding: 0 2rem;
+    }
+    @include for-phone {
+        padding: 0;
+    }
+
+    .heading {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        h5 {
+            font-size: 1.4rem;
+        }
+
+        @include for-phone {
+            h5 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    input {
+        @include default-input;
+        padding: 1.9rem 1rem;
+
+    }
+
+    textarea {
+        @include default-input;
+        padding: 1rem 1rem;
+    }
+
+    textarea {
+        height: 15rem;
+    }
+
+    .button-primary {
+        margin-top: 1rem;
+        padding: 1.1rem;
+    }
+}

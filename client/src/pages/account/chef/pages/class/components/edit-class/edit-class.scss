@@ -1,0 +1,25 @@
+@import '../../../../../../../sass/mixins';
+
+#edit-class {
+    input {
+        @include default-input;
+        font-size: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        font-weight: normal;
+    }
+    textarea {
+        @include default-input;
+        font-size: 1rem;
+        font-weight: normal;
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+        min-height: 10rem;
+    }
+
+    input[type=file] {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+    }
+}

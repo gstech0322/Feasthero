@@ -1,0 +1,273 @@
+@import '../../../../../../sass/mixins';
+@import '../../../../../../sass/variables';
+
+#classes {
+    .class-container {
+        margin-bottom: 2.2rem;
+    
+        @include for-tablet {
+            margin-bottom: 15rem;
+        }
+    
+        @include for-phone {
+            margin-bottom: 17rem;
+        }
+    
+        .class-container-background {
+            width: 100%;
+            height: 40vh;
+            border-radius: 1.1rem;
+            object-fit: cover;
+    
+            @include for-desktop {
+                height: 60vh;
+            }
+    
+            @include for-tablet {
+                height: 50vh;
+            }
+    
+            @include for-phone {
+                height: 35vh;
+            }
+        }
+    
+        .chef-photo:hover {
+            cursor: pointer;
+        }
+    
+        .chef-photo:hover + .chef-info-popup{
+            opacity: 1;
+            visibility: visible;
+            transition: all .2s cubic-bezier(.68,-0.55,.27,1.55) 0s;
+            bottom: -9rem;
+    
+            @include for-tablet {
+                visibility: hidden;
+                transition: none;
+                opacity: inherit;
+                bottom: inherit;
+            }
+        }
+    
+        .chef-info-popup {
+            text-align: left;
+            background: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0px 22px 30px 0px #00000059;
+            width: 37rem;
+            position: absolute;
+            top: auto;
+            bottom: -17rem;
+            left: 7rem;
+            padding: 1.5rem;
+            opacity: 0;
+            z-index: 1;
+            visibility: hidden;
+            transition: all .3s cubic-bezier(.68,-0.55,.27,1.55) 0s;
+    
+    
+            h3 {
+                @include content;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+    
+            p {
+                @include content;
+                font-size: 1.2rem;
+            }
+    
+            img {
+                width: 100%;
+                border-radius: 0.3rem;
+            }
+        }
+    
+        .class-container-content {
+            position: absolute;
+            top: 65%;
+            left: 10%;
+            width: 80%;
+            border-radius: 0.6rem;
+            padding: 0.7rem;
+            background-color: #fff;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    
+    
+            @media (max-width: 1674px) {
+                top: 60%;
+                width: 90%;
+                left: 5%;
+            }
+        
+            @include for-xxl-desktop {
+                top: 59%; 
+            }
+    
+            @include for-xl-desktop {
+                top: 54%; 
+            }
+    
+            @include for-large-desktop {
+                padding: 0.5rem;
+                top: 60%;
+            }
+    
+            @include for-desktop {
+                top: 60%;
+                padding: 1.4rem
+            }
+    
+            @include for-tablet {
+                top: 50%;
+                width: 85%;
+                left: 7.6%;
+            }
+        
+            @include for-phone {
+                top: 32%
+            }
+    
+            h5 {
+                @include content;
+                font-size: 1.3rem;
+    
+                @include for-xl-desktop {
+                    margin-bottom: 0.3rem;
+                    font-size: 1.15rem;
+                }
+    
+                @include for-large-desktop {
+                    font-size: 1rem;
+                    margin-bottom: 0.1rem;
+                }
+    
+                @media (max-width: 1064px) {
+                    margin-bottom: 0.05rem;
+                    font-size: 0.9rem;
+                }
+    
+                @media (max-width: 998px) {
+                    font-size: 0.7rem;
+                }
+    
+                @include for-desktop {
+                    font-size: 1.6rem;
+                    margin-bottom: 0.7rem;
+                }
+    
+                @include for-phone {
+                    font-size: 1.4rem;
+                    margin-bottom: 0.25rem;
+                }
+            }
+    
+            h6 {
+                font-size: 1.15rem;
+                color: $text-primary;
+    
+                @include for-xl-desktop {
+                    font-size: 1.05rem;
+                }
+    
+                @include for-large-desktop {
+                    font-size: 0.9rem;
+                }
+    
+                @media (max-width: 1064px) {
+                    font-size: 0.8rem;
+                }
+    
+                @include for-desktop {
+                    font-size: 1.3rem;
+                }
+    
+                @include for-phone {
+                    font-size: 1.1rem;
+                }
+    
+                span {
+                    @include content;
+    
+                    @include for-xl-desktop {
+                        font-size: 1.05rem;
+                    }
+    
+                    @include for-large-desktop {
+                        font-size: 0.9rem;
+                    }
+    
+                    @media (max-width: 1064px) {
+                        font-size: 0.8rem;
+                    }
+    
+                    @include for-desktop {
+                        font-size: 1.3rem;
+                    }
+    
+                    @include for-phone {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+    
+            .chef-photo-container {
+                text-align: center;
+    
+                @include for-desktop {
+                    text-align: left;
+                }
+    
+                @include for-tablet {
+                    text-align: center;
+                    margin-bottom: 0.2rem;
+                }
+            }
+        }
+    
+        .chef-photo {
+            border-radius: 50%;
+            width: 3.3rem;
+            height: 3.3rem;
+        }
+    
+        .button-primary {
+            font-size: 1.4rem;
+            padding: 0.6rem 0 0.5rem;
+            margin-bottom: 0.4rem;
+    
+            @include for-xl-desktop {
+                font-size: 1.2rem;
+                padding: 0.5rem 0 0.4rem;
+            }
+    
+            @include for-large-desktop {
+                padding: 0.4rem 0 0.4rem;
+                font-size: 1.1rem;
+                margin-bottom: 0.3rem;
+            }
+    
+            @media (max-width: 1064px) {
+                font-size: 0.9rem;
+                padding: 0.2rem 0 0.2rem;
+            }
+    
+            @include for-desktop {
+                padding: 0.8rem 0 0.8rem;
+                font-size: 1.5rem;
+            }
+    
+            @include for-tablet {
+                margin-top: 0.5rem;
+                margin-bottom: 1.4rem;
+            }
+    
+            svg {
+                margin-bottom: -0.1rem;
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}
+

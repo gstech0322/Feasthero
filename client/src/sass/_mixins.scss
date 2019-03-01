@@ -1,0 +1,143 @@
+@import './variables';
+
+@mixin button {
+	user-select: none;
+    font-size: 1.55rem;
+	line-height: 28.37px;
+	text-align: center;
+	border: none;
+	font-weight: 700;
+	font-style: normal;
+	color: #F9F9F9;
+	display: inline-block;
+	border-radius: 0.5rem;
+	transition: all .2s ease-in;
+	width: 100%;
+}
+
+@mixin default-text {
+	font-style: normal;
+    font-weight:700;
+    color: $text-primary;
+}
+
+@mixin dark-content-container {
+	border-top: $checkout-border-top;
+    background: #F9F9F9;
+    box-shadow: 0px 10px 25px 0px #00000040;
+}
+
+@mixin light-content-container {
+	border-top: $checkout-border-top;
+    background: #fff;
+}
+
+@mixin title {
+	@include default-text;
+    font-size: 3.5rem;
+	@include title-breakpoints;
+}
+
+@mixin title-breakpoints {
+	@include for-large-desktop {
+		font-size: 3rem;
+	}
+
+	@include for-desktop {
+		font-size: 2.6rem;
+	}
+
+	@include for-tablet {
+		font-size: 3rem;
+	}
+
+	@include for-phone{
+		font-size: 2.3rem;
+	}
+}
+
+@mixin subtitle {
+	@include default-text;
+	font-size: 1.8rem;
+    line-height: 1.7rem;
+}
+
+@mixin small-section-title {
+	@include default-text;
+    line-height: 3rem;
+    font-size: 3.1rem;
+	@include small-section-title-breakpoints;
+}
+
+@mixin small-section-title-breakpoints {
+	@include for-large-desktop {
+		font-size: 2.8rem;
+	}
+
+	@include for-desktop {
+		margin-top: 5rem;
+		font-size: 3rem;
+		line-height: 3.8rem;
+	}
+
+	@include for-tablet {
+		font-size: 2.5rem;
+		line-height: 3rem;
+	}
+
+	@include for-phone {
+		font-size: 2rem;
+		line-height: 2.4rem;
+	}
+}
+
+@mixin content {
+	@include default-text;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+}
+
+@mixin content-breakpoints {
+	@include for-desktop {
+		font-size: 1.2rem;
+	}
+
+	@include for-tablet {
+		font-size: 1.1rem;
+	}
+}
+
+@mixin default-input {
+	box-shadow: none;
+	border: 1px solid $input-border;
+	border-radius: 0.5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+@mixin v-center {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin for-phone {
+	@media (max-width: 576px) { @content; }
+}
+@mixin for-tablet {
+	@media (max-width: 768px) { @content; }
+}
+@mixin for-desktop {
+	@media (max-width: 991px) { @content; }
+}
+@mixin for-large-desktop {
+	@media (max-width: 1200px) { @content; }
+}
+@mixin for-xl-desktop {
+	@media (max-width: 1400px) { @content; }
+}
+@mixin for-xxl-desktop {
+	@media (max-width: 1500px) { @content; }
+}

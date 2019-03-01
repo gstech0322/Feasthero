@@ -1,0 +1,33 @@
+@import '../../../../sass/mixins';
+
+#confirmation-details {  
+    margin-bottom: 3rem;
+
+    h2 {
+        @include default-text;
+        font-size: 2.2rem;
+        margin-bottom: 1rem
+    }
+
+    h3 {
+        @include default-text;
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .row {
+        margin-top: 1rem;
+    }
+
+    .col-6:first-child {
+        h5 {
+            @include default-text;
+        }
+    }
+
+    .col-6 {
+        h5 {
+            font-size: 1.3rem;
+        }
+    }
+}

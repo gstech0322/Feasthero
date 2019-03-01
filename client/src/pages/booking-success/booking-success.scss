@@ -1,0 +1,27 @@
+@import '../../sass/mixins';
+
+#booking-success {
+    h2 {
+        @include default-text;
+        font-size: 2.5rem;
+    }
+
+    p {
+        @include content;
+    }
+
+    #booking-success-container {
+        @include dark-content-container;
+        padding: 2.5rem;
+        margin-top: 4rem;
+        word-break: break-all;
+    }
+
+    .container {
+        max-width: 60%;
+
+        @include for-xl-desktop {
+            max-width: initial;
+        }
+    }
+}

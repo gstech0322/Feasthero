@@ -1,0 +1,7 @@
+export const AT_LOGIN_PAGE = "AT_LOGIN_PAGE";
+export const LEFT_LOGIN_PAGE = "LEFT_LOGIN_PAGE";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const LOAD_ACCOUNT = "LOAD_ACCOUNT";
+export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS";
+export const CLEAR_ERRORS = "CLEAR_ERRORS";

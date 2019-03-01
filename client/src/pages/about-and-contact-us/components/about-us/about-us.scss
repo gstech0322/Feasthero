@@ -1,0 +1,54 @@
+@import '../../../../sass/variables';
+@import '../../../../sass/mixins';
+
+#about-us {
+    margin-top: 5rem;
+    text-align: center;
+    background-color: $light;
+    padding: 5rem;
+    border-radius: 0.9rem;
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    a {
+        margin: 0 1rem;
+    }
+
+    .icons {
+        justify-content: center;
+        margin-top: 1rem;
+        
+        @include for-tablet {
+            justify-content: start;
+            margin-left: 0.1rem;
+        }
+
+        @include for-phone {
+            justify-content: space-between;
+            margin-left: 0;
+        }
+    }
+
+    @include for-tablet {
+        text-align: left;
+    }
+
+    @include for-phone {
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    @include for-desktop {
+        padding: 3rem 0.5rem;
+    }
+
+    
+}

@@ -1,0 +1,22 @@
+@import '../../../../../sass/mixins';
+
+#add-class-modal {
+    input, textarea {
+        @include default-input;
+        font-size: 1rem;
+        font-weight: normal;
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
+    }
+
+    textarea {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+    input[type=file] {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+    }
+}

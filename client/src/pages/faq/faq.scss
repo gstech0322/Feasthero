@@ -1,0 +1,27 @@
+#faq {
+    .card-header {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .card-header:hover {
+        cursor: pointer;
+    }
+
+    .rotate-down {
+        transform-origin: center;
+        animation: rotate-down 0.2s linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes rotate-down {
+        0% {
+            transform: rotate(30deg);
+        }
+        50% {
+            transform: rotate(60deg);
+        }
+        100% {
+            transform: rotate(90deg);
+        }
+    }
+}

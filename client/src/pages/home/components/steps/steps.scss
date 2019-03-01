@@ -1,0 +1,48 @@
+@import '../../../../sass/variables';
+@import '../../../../sass/mixins';
+
+
+#steps-to-start {
+    margin-top: $section-gap;
+    text-align: center;
+
+    img {
+        width: 40%;
+    }
+    
+    .row {
+        margin-top: 1.5rem;
+    }
+
+    .col-md-3:nth-child(2) {
+        @include for-tablet {
+            margin: 2rem 0;
+        }
+    }
+
+    h4 {
+        @include subtitle;
+        @include for-desktop {
+            font-size: 1.7rem;
+        }
+        @include for-phone {
+            font-size: 1.4rem;
+        }
+    }
+
+    p {
+        @include content;
+
+        @include for-desktop {
+            font-size: 1.2rem;
+        }
+    
+        @include for-tablet {
+            font-size: 1.1rem;
+        }
+    }
+
+    .title {
+        margin-bottom: 1.2rem;
+    }
+}
